@@ -176,9 +176,9 @@ body.ar .cbadge{left:auto;right:12px}body.ar .cdiff{right:auto;left:12px}body.ar
     <p class="hero-ar">الشيفة دينا</p>
     <p class="hero-p" id="hp">Discover the world's finest, highest-rated recipes — from Lebanese classics to Chinese street food, Italian masterpieces to Indian feasts. Every ingredient linked to Carrefour Lebanon.</p>
     <div class="hero-stats">
-      <div class="hs"><div class="hs-n">66</div><div class="hs-l" id="hsr">Recipes</div></div>
-      <div class="hs"><div class="hs-n">10</div><div class="hs-l" id="hsc">Cuisines</div></div>
-      <div class="hs"><div class="hs-n">🛒</div><div class="hs-l" id="hss">Carrefour Links</div></div>
+      <div class="hs"><div class="hs-n">58</div><div class="hs-l" id="hsr">Recipes</div></div>
+      <div class="hs"><div class="hs-n">8</div><div class="hs-l" id="hsc">Cuisines</div></div>
+      <div class="hs"><div class="hs-n">💡</div><div class="hs-l" id="hss">Chef Tips</div></div>
     </div>
     <a href="#recipes" class="hero-btn" id="hbtn">Explore Recipes ↓</a>
   </div>
@@ -202,7 +202,7 @@ body.ar .cbadge{left:auto;right:12px}body.ar .cdiff{right:auto;left:12px}body.ar
 <main class="main" id="recipes">
   <div class="sec-hdr">
     <h2 class="sec-title"><span id="sto">Our</span> <span>Recipes</span></h2>
-    <span class="rcount" id="rc">66 recipes</span>
+    <span class="rcount" id="rc">58 recipes</span>
   </div>
   <div class="grid" id="grid"></div>
 </main>
@@ -234,7 +234,7 @@ function toggleLang(){
   if(lang==='ar'){document.body.classList.add('ar');hr.setAttribute('lang','ar');hr.setAttribute('dir','rtl');document.getElementById('lbtn').textContent='English';}
   else{document.body.classList.remove('ar');hr.setAttribute('lang','en');hr.setAttribute('dir','ltr');document.getElementById('lbtn').textContent='عربي';}
   const t=L[lang];
-  ['hb','hp','hsr','hsc','hss','hbtn','hscr','fa','fcn','fit','flb','fin','fjp','fth','ffr','fmx','fgr','fus','sto'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=t[id];});
+  ['hb','hp','hsr','hsc','hss','hbtn','hscr','fa','fcn','fit','fin','fjp','far','ffr','fmx','fus','sto'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=t[id];});
   document.getElementById('fts').textContent=t.fts;
   document.getElementById('ftn').innerHTML=`${t.ftn} <a href="https://www.carrefourlebanon.com/maflbn/en" target="_blank">Carrefour Lebanon</a>`;
   document.getElementById('srch').placeholder=t.sp;
